@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>网易云</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img style="margin-top:-10px" src="img/1.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"> 发现音乐</a></li>
+                <li><a href="#">我的音乐</a></li>
+                <li><a href="#">朋友</a></li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">音乐人</a></li>
+                <li><a href="#">下载客户端</a></li>
+                <li><span class="badge " style="color: white;background-color: red;margin-top: 10px"> Hot</span></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-inverse">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">登录 <span class="caret"></span></a>
+                    <ul class="dropdown-menu navbar-inverse" >
+                        <li><a href="#">手机号登录</a></li>
+                        <li><a href="#">微信登录</a></li>
+                        <li><a href="#">QQ登录</a></li>
+                        <li><a href="#">新浪微博登录</a></li>
+                        <li><a href="#">网易邮箱登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" placeholder="音乐/视频/电台/用户"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-video-camera" aria-hidden="true"></i>
+                        视频投稿
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--轮播-->
+<div class="box">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-8">
+                <div id="myCarousel" class="carousel slide">
+                    <ol class="carousel-indicators ">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="http://p1.music.126.net/Kmq3hDscOLs14OAdxUlJTw==/109951163109993949.jpg"
+                                 alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="http://p1.music.126.net/0PHUtK3GgUjmkzwGWiSu1g==/109951163110310305.jpg"
+                                 alt="Second slide">
+                        </div>
+                        <div class="item">
+                            <img src="http://p1.music.126.net/mzNzikMynQ73oO8OGuuOrg==/109951163109164853.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="http://p1.music.126.net/wHrJ0loXppK21IcaOzqixQ==/109951163110467912.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="http://p1.music.126.net/_0jjSDejzDGQYefVKVqZaw==/109951163109880160.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src=" http://p1.music.126.net/wbIw5gfcaYfIoSb1NWwH4g==/109951163110472781.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src=" http://p1.music.126.net/_wS8rigeKc3g-i2JqqdcWA==/109951163110520098.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src=" http://p1.music.126.net/5Nybl8AlHlny-sfVKQayow==/109951163110485003.jpg"
+                                 alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control left leftPrev" href="#myCarousel"
+                       data-slide="prev"> < </a>
+                    <a class="carousel-control right rightNext" href="#myCarousel"
+                       data-slide="next"> > </a>
+                </div>
+            </div>
+            <div class="col-md-4" id="download">
+                <a href="#"><img class="img-responsive " src="img/download.gif" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <!--热门推荐-->
+            <div class="col-md-8 col-sm-12  main-left ">
+                <div class="hot">
+                    <div class="content_nav">
+                        <div class="hot_bar">
+                            <img style="float: left;" src="img/maintitle_bg.gif">
+                            <a class="main_title">热门推荐</a>
+                        </div>
+                        <ul class="hot_ul  clearfix">
+                            <li><a href="#">华语</a></li>
+                            <li><a href="#">流行</a></li>
+                            <li><a href="#">摇滚</a></li>
+                            <li><a href="#">民谣</a></li>
+                            <li><a href="#">电子</a></li>
+                        </ul>
+                       <span class="two">
+                           <img class="more_arrow" src="img/arrow_r.gif"/>
+                        <a href="#" class="more">更多</a>
+                       </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="2017网易云音乐原创盛典获奖名单">
+                                <img src="http://p1.music.126.net/uqdzqACBbhC4R8E7rIrMKw==/109951163110617273.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">2017网易云音乐原创盛典获奖名单</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="影视献声哪家强 选秀歌手露锋芒">
+                                <img src="http://p1.music.126.net/0_MdjzCgOiEcDbpO4eKnTw==/109951163104135204.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 56万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">影视献声哪家强 选秀歌手露锋芒</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="蜜恋必备BGM • 甜腻暖心inst.">
+                                <img src="http://p1.music.126.net/Yevav1rLCymw0uJPvxI3kA==/109951163077211944.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">蜜恋必备BGM • 甜腻暖心inst.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="哈哈榜之2017十大关键词">
+                                <img src="http://p1.music.126.net/uqdzqACBbhC4R8E7rIrMKw==/109951163110617273.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">哈哈榜之2017十大关键词</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="Vol. 46 「自赏，趿鞋织梦」">
+                                <img src="http://p1.music.126.net/qR1sRIhiv2oOayMMZJVP5A==/109951163087039540.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 44万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">Vol. 46 「自赏，趿鞋织梦」</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="刘老师爆笑解说美国悬疑惊悚电影《忌日快乐》">
+                                <img src="http://p1.music.126.net/dZD73zuu7RvPDbbskkPilA==/109951163110695191.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">2017网易云音乐原创盛典获奖名单</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="「日系」森林低语 少女独舞">
+                                <img src="http://p1.music.126.net/sVhV2r1ho2P4_WFu76OdiQ==/18902803905214874.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">「日系」森林低语 少女独舞</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href="#" title="鬼眼神算">
+                                <img src="http://p1.music.126.net/c-2dSNDt8dNBh1PnUHcNgQ==/109951163085733638.jpg?param=140y140"
+                                     alt="...">
+                            </a>
+                            <div class="bottom1">
+                                <span><i class="fa fa-headphones" aria-hidden="true"></i> 196万</span>
+                                <a href="" style=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="caption text-center">
+                                <a href="#">「日系」森林低语 少女独舞</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--广告-->
+                <a target="_blank"
+                   href="http://pr.da.netease.com/receiver/?action=ad&camName=1515723953911&target=https%3A%2F%2Fmei.163.com%2Frepo%2Fprxed0a35d865fb95628badddb982297e07%3Futm_source%3DMUSIC%26utm_medium%3Dtuofa&sid=1300076952">
+                    <img class="img-responsive"
+                         src="https://iadmat.nosdn.127.net/ad.bid.material_78c12bc61bde47998fc6f70b76a848d4?imageView&thumbnail=689x75&quality=100"
+                         border="0" height="75" alt="">
+                </a>
+                <!--新碟上架-->
+                <div class="hot">
+                    <div class="content">
+                        <div class="hot_bar">
+                            <img style="float: left;" src="img/maintitle_bg.gif">
+                            <a class="main_title">新碟上架</a>
+                        </div>
+                        <img class="more_arrow" src="img/arrow_r.gif"/>
+                        <a href="#" class="more ">更多</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="伟大的渺小"> <img
+                                    src="http://p3.music.126.net/xdgsjM7uQxR7o1xSKGXlCg==/109951163099447939.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">伟大的渺小</a>
+                                <a href="#">林俊杰</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="剩下了自己"> <img
+                                    src="http://p4.music.126.net/sP3HC-f5ELM2nCgLwT3hJw==/109951163106305689.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">剩下了自己</a>
+                                <a href="#">张韶涵</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="角色"><img
+                                    src="http://p3.music.126.net/7o7LOi-qRSZ7Xm92hfksOA==/109951163095330229.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">角&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色 </a>
+                                <a href="#">李易峰</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="等你下课"> <img
+                                    src="http://p4.music.126.net/A8qicH14toObbLpPMiKmBw==/109951163110962030.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">等&nbsp;&nbsp;你&nbsp;&nbsp;下&nbsp;&nbsp;课</a>
+                                <a href="#">周杰伦</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="My My My!"> <img
+                                    src="http://p4.music.126.net/OoRRvztU93aqe8ovQkBs1A==/109951163105451047.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">My My My!</a>
+                                <a href="#">Troye</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#" title="BIGBANG SPECIAL EVENT 2017"><img
+                                    src="http://p4.music.126.net/qiwM_7w7G_lQVl1W4jARYQ==/109951163109210576.jpg?param=100y100"
+                                    alt="..."></a>
+                            <div class="caption text-center">
+                                <a href="#">BIGBANG</a>
+                                <a href="#">BIGBANG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--榜单-->
+                <div class="hot">
+                    <div class="content">
+                        <div class="hot_bar">
+                            <img style="float: left;" src="img/maintitle_bg.gif">
+                            <a class="main_title">榜单</a>
+                        </div>
+                        <img class="more_arrow" src="img/arrow_r.gif"/>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="list-group" id="list-group">
+                            <img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100"
+                                 alt="">
+                            <div class="title">
+                                <div id="list-right">
+                                    <a href="#" class="list-right" style="color: #000;font-weight: bold">
+                                        云音乐飙升榜
+                                    </a>
+                                </div>
+                                <br>
+                                <div class="title-right">
+                                    <a href="#" style="color: #666;font-size: 20px;">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" style="color:#666;font-size: 20px">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-left">
+                            <li class="list-group-item "><span class="number">1</span>&nbsp;&nbsp;&nbsp; <a href="#">返老还童</a>
+                            </li>
+                            <li class="list-group-item "><span class="number">2</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">与荒野</a></li>
+                            <li class="list-group-item "><span class="number">3</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">差不多</a></li>
+                            <li class="list-group-item "><span class="number1">4</span>&nbsp;&nbsp;&nbsp; <a href="#">沧海一声笑</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">5</span>&nbsp;&nbsp;&nbsp; <a href="#">小美好</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">6</span>&nbsp;&nbsp;&nbsp; <a href="#">小时代</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">7</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">天后</a></li>
+                            <li class="list-group-item "><span class="number1">8</span>&nbsp;&nbsp;&nbsp;<a href="#">
+                                装睡的人</a></li>
+                            <li class="list-group-item "><span class="number1">9</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">喜欢</a></li>
+                            <li class="list-group-item "><span class="number1">10</span>&nbsp;&nbsp;&nbsp; <a href="#">你要的全拿走</a>
+                            </li>
+                            <li class="list-group-item "><a href="#">查看全部》</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="list-group" id="list-group">
+                            <img src="http://p3.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100"
+                                 alt="">
+                            <div class="title">
+                                <div id="list-right">
+                                    <a href="#" class="list-right" style="color: #000;font-weight: bold">
+                                        云音乐新歌榜
+                                    </a>
+                                </div>
+                                <br>
+                                <div class="title-right">
+                                    <a href="#" style="color: #666;font-size: 20px;">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" style="color:#666;font-size: 20px">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-left">
+                            <li class="list-group-item "><span class="number">1</span>&nbsp;&nbsp;&nbsp; <a href="#">返老还童</a>
+                            </li>
+                            <li class="list-group-item "><span class="number">2</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">与荒野</a></li>
+                            <li class="list-group-item "><span class="number">3</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">差不多</a></li>
+                            <li class="list-group-item "><span class="number1">4</span>&nbsp;&nbsp;&nbsp; <a href="#">沧海一声笑</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">5</span>&nbsp;&nbsp;&nbsp; <a href="#">小美好</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">6</span>&nbsp;&nbsp;&nbsp; <a href="#">小时代</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">7</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">天后</a></li>
+                            <li class="list-group-item "><span class="number1">8</span>&nbsp;&nbsp;&nbsp;<a href="#">
+                                装睡的人</a></li>
+                            <li class="list-group-item "><span class="number1">9</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">喜欢</a></li>
+                            <li class="list-group-item "><span class="number1">10</span>&nbsp;&nbsp;&nbsp; <a href="#">你要的全拿走</a>
+                            </li>
+                            <li class="list-group-item "><a href="#">查看全部》</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="list-group" id="list-group">
+                            <img  src="http://p3.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100"
+                                 alt="">
+                            <div class="title">
+                                <div id="list-right">
+                                    <a href="#" class="list-right" style="color: #000;font-weight: bold">
+                                        云音乐原创榜
+                                    </a>
+                                </div>
+                                <br>
+                                <div class="title-right">
+                                    <a href="#" style="color: #666;font-size: 20px;">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" style="color:#666;font-size: 20px">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-left">
+                            <li class="list-group-item "><span class="number">1</span>&nbsp;&nbsp;&nbsp; <a href="#">返老还童</a>
+                            </li>
+                            <li class="list-group-item "><span class="number">2</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">与荒野</a></li>
+                            <li class="list-group-item "><span class="number">3</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">差不多</a></li>
+                            <li class="list-group-item "><span class="number1">4</span>&nbsp;&nbsp;&nbsp; <a href="#">沧海一声笑</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">5</span>&nbsp;&nbsp;&nbsp; <a href="#">小美好</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">6</span>&nbsp;&nbsp;&nbsp; <a href="#">小时代</a>
+                            </li>
+                            <li class="list-group-item "><span class="number1">7</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">天后</a></li>
+                            <li class="list-group-item "><span class="number1">8</span>&nbsp;&nbsp;&nbsp;<a href="#">
+                                装睡的人</a></li>
+                            <li class="list-group-item "><span class="number1">9</span>&nbsp;&nbsp;&nbsp; <a
+                                    href="#">喜欢</a></li>
+                            <li class="list-group-item "><span class="number1">10</span>&nbsp;&nbsp;&nbsp; <a href="#">你要的全拿走</a>
+                            </li>
+                            <li class="list-group-item "><a href="#">查看全部》</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 main-right">
+                <div class="login">
+                    <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">用户登录</button>
+                </div>
+                <!--登录的模态框-->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#0f0f0f;color: white;">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">X</button>
+                                <h4 class="modal-title" id="myModalLabel" >登录</h4>
+                            </div>
+                            <div class="modal-body">
+                                  <div class="row">
+                                      <div class="col-md-4">
+                                          <form>
+                                              <div class="form-group">
+                                                  <label for="recipient-name" class="control-label">手机号登陆:</label>
+                                                  <input type="text" class="form-control" id="recipient-name" placeholder="请输入手机号">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="recipient-name" class="control-label">密码:</label>
+                                                  <input type="text" class="form-control" id="recipient" placeholder="请输入密码">
+                                              </div>
+                                          </form>
+                                  </div>
+                                      <div class="col-md-4 col-md-offset-2" style="margin-top: 20px;">
+                                          <button type="button" class="btn btn-primary" data-toggle="modal"> QQ登录</button>
+                                          <br><br>
+                                          <button type="button" class="btn btn-success" data-toggle="modal">微信登录</button>
+                                          <br><br>
+                                          <button type="button" class="btn btn-danger" data-toggle="modal">微博登录</button>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--歌手-->
+                <div class="singers ">
+                    <div class="left_head">
+                        <span style="font-size: 12px;font-weight: bold">入驻歌手</span>
+                        <a href="javascript:;" style="float: right;font-size: 12px;color: #666;">查看更多</a>
+                    </div>
+                    <div class="singer">
+                        <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="" style="float: left">
+                        <div class="singer_img">
+                            <span class="singer_name">张惠妹aMEI</span><br/>
+                            <span class="singer_int">台湾歌手张惠妹</span>
+                        </div>
+                    </div>
+                    <div class="singer">
+                        <img src="http://p1.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62"
+                             alt=""
+                             style="float: left">
+                        <div class="singer_img">
+                            <span class="singer_name">Fine乐团</span><br/>
+                            <span class="singer_int">独立音乐人</span>
+                        </div>
+                    </div>
+                    <div class="singer">
+                        <img src="http://p1.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62"
+                             alt=""
+                             style="float: left">
+                        <div class="singer_img">
+                            <span class="singer_name">萬曉利</span><br/>
+                            <span class="singer_int">民谣歌手</span>
+                        </div>
+                    </div>
+                    <div class="singer">
+                        <img src="http://p1.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62"
+                             alt=""
+                             style="float: left">
+                        <div class="singer_img">
+                            <span class="singer_name">音乐人赵雷</span><br/>
+                            <span class="singer_int">民谣歌手</span>
+                        </div>
+                    </div>
+                    <div class="singer">
+                        <img src="http://p1.music.126.net/U-duMw2-FE0wNRsuwGktPw==/109951162895674268.jpg?param=62y62"
+                             alt="" style="float: left">
+                        <div class="singer_img">
+                            <span class="singer_name">王三溥</span><br/>
+                            <span class="singer_int">音乐人</span>
+                        </div>
+                    </div>
+                    <a tabindex="0" class="btn  btn-danger" role="button" data-toggle="popover" data-trigger="focus"  data-placement="top" data-content=" 欢迎所有音乐妄想！" style="margin-left: 20px">申请成为网易云音乐人</a>
+                </div>
+                <!--热门主播-->
+                <div class="hot_zb">
+                    <div class="left_head">
+                        <span style="font-size: 12px; font-weight: bold;">热门主播</span>
+                    </div>
+                    <div class="zb">
+                        <img src="http://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                             alt=""
+                             style="float: left">
+                        <span>
+                     <a href="" class="zb_name">陈立</a>
+                     <img src="img/v.gif" style="float: right">
+                 </span>
+                        <p class="zb_int">心理学家、美食家陈立教授</p>
+                    </div>
+                    <div class="zb">
+                        <img src="http://p1.music.126.net/y5-sM7tjnxnu_V9LWKgZlw==/7942872001461517.jpg?param=40y40"
+                             alt=""
+                             style="float: left">
+                        <span>
+                     <a href="" class="zb_name">DJ艳秋</a>
+                     <img src="img/v.gif" style="float: right">
+                 </span>
+                        <p class="zb_int">著名音乐节目主持人</p>
+                    </div>
+                    <div class="zb">
+                        <img src="http://p1.music.126.net/6cc6lgOfQTo6ovNnTHPyJg==/3427177769086282.jpg?param=40y40"
+                             alt=""
+                             style="float: left">
+                        <span>
+                     <a href="" class="zb_name">国家大剧院古典音乐官方</a>
+                     <img src="img/v.gif" style="float: right">
+                 </span>
+                        <p class="zb_int">国家大剧院古典音乐官方</p>
+                    </div>
+                    <div class="zb">
+                        <img src="http://p1.music.126.net/xa1Uxrrn4J0pm_PJwkGYvw==/3130309604335651.jpg?param=40y40"
+                             alt=""
+                             style="float: left">
+                        <span>
+                     <a href="" class="zb_name">谢谢收听</a>
+                     <img src="img/v.gif" style="float: right">
+                 </span>
+                        <p class="zb_int">南京电台主持人王馨</p>
+                    </div>
+                    <div class="zb">
+                        <img src="http://p1.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40"
+                             alt=""
+                             style="float: left">
+                        <span>
+                     <a href="" class="zb_name">DJ晓苏</a>
+                     <img src="img/v.gif" style="float: right">
+                 </span>
+                        <p class="zb_int">独立DJ，CRI环球旅游广播特邀DJ</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 leftNew">
+                <ul class="footer-db clearfix">
+                    <li><a href="#">关于网易 &nbsp;|</a></li>
+                    <li><a href="#">客户服务 &nbsp;|</a></li>
+                    <li><a href="#">服务条款 &nbsp;|</a></li>
+                    <li><a href="#">网站导航 &nbsp;|</a></li>
+                    <li><a href="#">意见反馈 &nbsp;|</a></li>
+                </ul>
+                <p style="padding-left: 40px;color: #666">网易公司版权所有©1997-2018杭州乐读科技有限公司运营：浙网文[2015] 0415-135号</p>
+
+            </div>
+            <div class="col-md-4 col-sm-6 rightNew">
+            </div>
+        </div>
+    </div>
+</div>
+274112
+</body>
+</html>
+<script>
+    $(function () {
+        $('#myCarousel').carousel({interval: 3000});
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
